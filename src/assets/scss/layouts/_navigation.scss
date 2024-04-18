@@ -1,8 +1,48 @@
 @use '../utils/variables' as *;
 
 .navigation {
+  &__menu {
+    display: none;
+    cursor: pointer;
+  }
+
   &__list {
     display: flex;
     gap: $gap-normal;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .navigation {
+    &__menu {
+      display: block;
+    }
+
+    &__mobile {
+      position: absolute;
+      top: 5rem;
+      right: 3rem;
+      left: 3rem;
+    }
+
+    &__mobile--hide {
+      display: none;
+    }
+
+    &__desktop {
+      display: none;
+    }
+
+    &__list--mobile {
+      padding: 2em 4em;
+      padding-top: 3em;
+
+      flex-direction: column;
+      align-items: center;
+
+      background-color: $clr-neutral-white;
+
+      clip-path: polygon(90% 9%, 100% 0, 100% 100%, 0 100%, 0 9%);
+    }
   }
 }

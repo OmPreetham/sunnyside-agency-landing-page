@@ -1,5 +1,11 @@
-import React from 'react'
+import { NavigationList } from './NavigationList'
+import React, { useState } from 'react'
 export function Header({}) {
+  const [showMenu, setShowMenu] = useState(false)
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
+  }
   return (
     <header className="header">
       <svg
@@ -15,28 +21,25 @@ export function Header({}) {
         />
       </svg>
       <nav className="navigation">
-        <ul className="navigation__list">
-          <li className="navigation__item">
-            <a className="navigation__link" href="#">
-              About
-            </a>
-          </li>
-          <li className="navigation__item">
-            <a className="navigation__link" href="#">
-              Services
-            </a>
-          </li>
-          <li className="navigation__item">
-            <a className="navigation__link" href="#">
-              Projects
-            </a>
-          </li>
-          <li className="navigation__item">
-            <a className="navigation__link navigation__link--contact" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
+        <div onClick={toggleMenu} className="navigation__menu">
+          <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+              fill="#FFF"
+              fillRule="evenodd"
+            />
+          </svg>
+          <div
+            className={`navigation__mobile ${
+              !showMenu ? 'navigation__mobile--hide' : ''
+            }`}
+          >
+            <NavigationList />
+          </div>
+        </div>
+        <div className="navigation__desktop">
+          <NavigationList />
+        </div>
       </nav>
     </header>
   )
