@@ -1,0 +1,65 @@
+@use '../utils/variables' as *;
+
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-normal;
+
+    grid-area: content;
+
+    max-width: 50%;
+
+    margin-block: 1rem;
+
+    margin-inline: auto;
+  }
+
+  &__picture {
+    grid-area: picture;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.article:nth-of-type(1) {
+  grid-template-areas: 'content picture';
+}
+
+.article:nth-of-type(2) {
+  grid-template-areas: 'picture content';
+}
+
+@media screen and (max-width: 810px) {
+  .article {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+
+    &__content {
+      max-width: none;
+      margin: 1rem;
+
+      align-items: center;
+    }
+  }
+
+  .article:nth-of-type(1) {
+    grid-template-areas: 'content' 'picture';
+  }
+
+  .article:nth-of-type(2) {
+    grid-template-areas: 'content' 'picture';
+  }
+}

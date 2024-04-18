@@ -14,7 +14,7 @@ export function Articles({}) {
         <picture className="article__picture">
           <source
             srcSet="images/mobile/image-transform.jpg"
-            media="(max-width: 750px)"
+            media="(max-width: 810px)"
           />
           <img
             className="article__image"
@@ -36,7 +36,7 @@ export function Articles({}) {
         <picture className="article__picture">
           <source
             srcSet="images/mobile/image-stand-out.jpg"
-            media="(max-width: 750px)"
+            media="(max-width: 810px)"
           />
           <img
             className="article__image"

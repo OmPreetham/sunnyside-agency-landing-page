@@ -1,1 +1,11 @@
 @use '../scss/base/reset';
+@use './pages/home';
+@use './layouts/header';
+@use './layouts/navigation';
+@use './layouts/feed';
+@use './layouts/hero';
+@use './layouts/articles';
+@use './layouts/features';
+@use './layouts/testimonials';
+@use './layouts/gallery';
+@use './layouts/footer';

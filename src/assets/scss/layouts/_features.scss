@@ -1,0 +1,42 @@
+@use '../utils/variables' as *;
+
+.features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  &__content {
+    position: absolute;
+
+    bottom: 0;
+
+    max-width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 3em;
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .features-wrapper {
+    grid-template-columns: auto;
+  }
+}

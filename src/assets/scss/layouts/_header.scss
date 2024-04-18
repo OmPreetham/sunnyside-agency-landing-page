@@ -1,0 +1,15 @@
+@use '../utils/variables' as *;
+
+.header {
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+  gap: $gap-small;
+
+  padding: 3rem;
+
+  width: 100%;
+
+  z-index: 1;
+}

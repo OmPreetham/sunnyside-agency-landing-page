@@ -13,7 +13,7 @@ export function Features({}) {
         <picture className="feature__picture">
           <source
             srcSet="images/mobile/image-graphic-design.jpg"
-            media="(max-width: 750px)"
+            media="(max-width: 810px)"
           />
           <img
             className="feature__image"
@@ -33,7 +33,7 @@ export function Features({}) {
         <picture className="feature__picture">
           <source
             srcSet="images/mobile/image-photography.jpg"
-            media="(max-width: 750px)"
+            media="(max-width: 810px)"
           />
           <img
             className="feature__image"

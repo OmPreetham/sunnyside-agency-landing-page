@@ -1,0 +1,8 @@
+@use '../utils/variables' as *;
+
+.navigation {
+  &__list {
+    display: flex;
+    gap: $gap-normal;
+  }
+}

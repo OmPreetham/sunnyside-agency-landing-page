@@ -4,7 +4,7 @@ export function Gallery({}) {
       <picture className="gallery__picture">
         <source
           srcSet="images/mobile/image-gallery-milkbottles.jpg"
-          media="(max-width: 750px)"
+          media="(max-width: 810px)"
         />
         <img
           className="gallery__image"
@@ -15,7 +15,7 @@ export function Gallery({}) {
       <picture className="gallery__picture">
         <source
           srcSet="images/mobile/image-gallery-orange.jpg"
-          media="(max-width: 750px)"
+          media="(max-width: 810px)"
         />
         <img
           className="gallery__image"
@@ -26,7 +26,7 @@ export function Gallery({}) {
       <picture className="gallery__picture">
         <source
           srcSet="images/mobile/image-gallery-cone.jpg"
-          media="(max-width: 750px)"
+          media="(max-width: 810px)"
         />
         <img
           className="gallery__image"
@@ -37,7 +37,7 @@ export function Gallery({}) {
       <picture className="gallery__picture">
         <source
           srcSet="images/mobile/image-gallery-sugarcubes.jpg"
-          media="(max-width: 750px)"
+          media="(max-width: 810px)"
         />
         <img
           className="gallery__image"
