@@ -8,6 +8,17 @@
   gap: $gap-midium-high;
 
   padding-block: 4.5rem;
+
+  width: 100%;
+
+  background-color: $clr-neutral-dark-moderate-cyan-footer-background;
+
+  &__logo {
+    scale: 1.4;
+    path {
+      fill: $clr-primary-dark-moderate-cyan-footer;
+    }
+  }
 }
 
 .social {

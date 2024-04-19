@@ -1,3 +1,90 @@
 @use '../utils/variables' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+@mixin font-heading1-bold {
+  font-size: $fs-heading1;
+  font-family: $ff-fraunces;
+  font-weight: $fw-900;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+
+  color: $clr-neutral-white;
+}
+
+@mixin font-heading2-bold {
+  font-size: $fs-heading2;
+  font-family: $ff-fraunces;
+  font-weight: $fw-900;
+
+  color: $clr-neutral-very-dark-desaturated-blue;
+}
+
+@mixin font-heading3-bold {
+  font-size: $fs-heading3;
+  font-family: $ff-fraunces;
+  font-weight: $fw-900;
+
+  text-transform: capitalize;
+}
+
+@mixin font-heading4-bold {
+  font-size: $fs-heading4;
+  font-family: $ff-fraunces;
+  font-weight: $fw-900;
+
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+
+  color: $clr-neutral-grayish-blue;
+}
+
+@mixin font-heading5-bold {
+  font-size: $fs-heading5;
+  font-family: $ff-fraunces;
+  font-weight: $fw-900;
+
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@mixin font-article-description-mid {
+  font-size: $fs-article-testimonials-description;
+  font-family: $ff-barlow;
+  font-weight: $fw-600;
+
+  color: $clr-neutral-grayish-blue;
+}
+
+@mixin font-features-description-mid {
+  font-size: $fs-feature-description;
+  font-family: $ff-barlow;
+  font-weight: $fw-600;
+
+  text-align: center;
+  opacity: 0.8;
+}
+
+@mixin font-testimonial-description-mid {
+  font-size: $fs-testimonial-description;
+  font-family: $ff-barlow;
+  font-weight: $fw-600;
+
+  line-height: 1.8;
+  text-align: center;
+  opacity: 0.8;
+
+  color: $clr-neutral-very-dark-grayish-blue;
+}
+
+@mixin font-testimonial-position-regular {
+  font-size: $fs-testimonial-position;
+  font-family: $ff-barlow;
+  font-weight: $fw-600;
+
+  text-align: center;
+  opacity: 0.8;
+
+  color: $clr-neutral-grayish-blue;
+}

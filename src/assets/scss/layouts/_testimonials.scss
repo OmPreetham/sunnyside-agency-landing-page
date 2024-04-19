@@ -1,13 +1,14 @@
 @use '../utils/variables' as *;
+@use '../base/topography' as *;
 
 .testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: $gap-midium-high;
+  gap: 5rem;
 
-  max-width: 70%;
+  max-width: 75%;
   min-height: 95dvh;
   margin-inline: auto;
 
@@ -19,13 +20,36 @@
     justify-content: space-between;
     gap: $gap-medium;
   }
+
+  &__heading {
+    @include font-heading4-bold;
+  }
 }
 
 .testimonial {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
   justify-content: space-between;
-  gap: $gap-midium-high;
+  gap: 4rem;
+
+  &__image {
+    width: 4.5rem;
+    border-radius: 50%;
+  }
+
+  &__author {
+    @include font-heading5-bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    @include font-testimonial-description-mid;
+  }
+
+  &__position {
+    @include font-testimonial-position-regular;
+  }
 }
 
 @media screen and (max-width: 810px) {

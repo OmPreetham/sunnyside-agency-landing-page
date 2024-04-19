@@ -6,10 +6,11 @@ $clr-primary-soft-red: hsl(7, 99%, 70%);
 $clr-primary-yellow: hsl(51, 100%, 49%);
 $clr-primary-dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
 $clr-primary-dark-blue-photography-text: hsl(198, 62%, 26%);
-$clr-primary-dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+$clr-primary-dark-moderate-cyan-footer: hsl(168, 44%, 32%);
 
 // Neutral
 
+$clr-neutral-dark-moderate-cyan-footer-background: hsl(167, 44%, 70%);
 $clr-neutral-very-dark-desaturated-blue: hsl(212, 27%, 19%);
 $clr-neutral-very-dark-grayish-blue: hsl(213, 9%, 39%);
 $clr-neutral-dark-grayish-blue: hsl(232, 10%, 55%);
@@ -26,14 +27,16 @@ $ff-barlow: 'Barlow', sans-serif;
 // Font Sizes
 
 $fs-base: 1rem;
-$fs-heading1: 1.5rem;
-$fs-heading2: 0.8rem;
-$fs-heading3: 0.8rem;
-$fs-heading4: 0.8rem;
-$fs-heading5: 0.8rem;
-$fs-article-testimonials-description: 1.3rem;
+$fs-heading1: 3.5rem;
+$fs-heading2: 2.5rem;
+$fs-heading3: 1.8rem;
+$fs-heading4: 1.3rem;
+$fs-heading5: 1.2rem;
+$fs-article-testimonials-description: 1.1rem;
 $fs-learn-more-button: 1.4rem;
-$fs-feature-description: 1.2rem;
+$fs-feature-description: 1.1rem;
+$fs-testimonial-description: 1.1rem;
+$fs-testimonial-position: 0.9rem;
 
 // Font Weights
 

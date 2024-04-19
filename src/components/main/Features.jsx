@@ -2,7 +2,7 @@ export function Features({}) {
   return (
     <div className="features-wrapper">
       <section className="feature">
-        <div className="feature__content">
+        <div className="feature__content feature__content--green">
           <h3 className="feature__heading">Graphic design</h3>
           <p className="feature__description">
             Great design makes you memorable. We deliver artwork that
@@ -23,7 +23,7 @@ export function Features({}) {
         </picture>
       </section>
       <section className="feature">
-        <div className="feature__content">
+        <div className="feature__content feature__content--blue">
           <h3 className="feature__heading">Photography</h3>
           <p className="feature__description">
             Increase your credibility by getting the most stunning, high-quality

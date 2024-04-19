@@ -12,6 +12,8 @@ body {
   min-height: $min-height-screen;
 
   margin-inline: auto;
+
+  background-color: #3bef;
 }
 
 #root {
@@ -22,4 +24,6 @@ body {
   min-height: $min-height-screen;
 
   position: relative;
+
+  background-color: #ffff;
 }

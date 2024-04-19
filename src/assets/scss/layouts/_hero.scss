@@ -1,4 +1,5 @@
 @use '../utils/variables' as *;
+@use '../base/topography' as *;
 
 .hero {
   position: relative;
@@ -13,7 +14,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    @include font-heading1-bold;
   }
 
   &__picture {
@@ -22,5 +27,14 @@
 
   &__image {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .hero {
+    &__content {
+      top: 70px;
+      bottom: 70px;
+    }
   }
 }
