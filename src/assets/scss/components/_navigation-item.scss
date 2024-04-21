@@ -1,0 +1,28 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+@use './contact' as *;
+
+@mixin navigation-item {
+  font-size: 1.1rem;
+  font-weight: $fw-600;
+
+  &__link {
+    text-decoration: none;
+    color: $clr-neutral-white;
+
+    &--contact {
+      @include contact-link;
+
+      cursor: pointer;
+
+      border-radius: 2em;
+
+      padding: 1em 1.5em;
+
+      &:focus,
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

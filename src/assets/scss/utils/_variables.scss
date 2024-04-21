@@ -2,8 +2,9 @@
 
 // Primary
 
-$clr-primary-soft-red: hsl(7, 99%, 70%);
-$clr-primary-yellow: hsl(51, 100%, 49%);
+$clr-primary-soft-red: hsla(7, 99%, 70%, 0.286);
+$clr-primary-yellow: hsla(51, 100%, 49%, 0.214);
+$clr-primary-button: hsl(51, 100%, 49%);
 $clr-primary-dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
 $clr-primary-dark-blue-photography-text: hsl(198, 62%, 26%);
 $clr-primary-dark-moderate-cyan-footer: hsl(168, 44%, 32%);
@@ -33,7 +34,7 @@ $fs-heading3: 1.8rem;
 $fs-heading4: 1.3rem;
 $fs-heading5: 1.2rem;
 $fs-article-testimonials-description: 1.1rem;
-$fs-learn-more-button: 1.4rem;
+$fs-learn-more-button: 1rem;
 $fs-feature-description: 1.1rem;
 $fs-testimonial-description: 1.1rem;
 $fs-testimonial-position: 0.9rem;

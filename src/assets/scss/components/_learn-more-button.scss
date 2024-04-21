@@ -1,0 +1,31 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+@mixin learn-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  outline: transparent;
+
+  width: fit-content;
+
+  background-color: transparent;
+
+  &__text {
+    font-family: $ff-fraunces;
+    font-size: $fs-learn-more-button;
+    font-weight: $fw-700;
+
+    color: $clr-neutral-very-dark-desaturated-blue;
+
+    font-family: $ff-fraunces;
+    font-size: $fs-learn-more-button;
+
+    line-height: 0.3;
+
+    text-transform: uppercase;
+  }
+}

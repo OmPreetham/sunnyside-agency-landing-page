@@ -14,20 +14,29 @@ export function Footer({}) {
           fillRule="nonzero"
         />
       </svg>
-      <nav className="navigation">
-        <ul className="navigation__list">
-          <li className="navigation__item">
-            <a className="navigation__link navigation__link--color" href="#">
+      <nav className="footer-nav">
+        <ul className="footer-nav__list footer-nav__list--mobile">
+          <li className="footer-nav__item">
+            <a
+              className="footer-nav__item__link footer-nav__item__link--color"
+              href="#"
+            >
               About
             </a>
           </li>
-          <li className="navigation__item">
-            <a className="navigation__link navigation__link--color" href="#">
+          <li className="footer-nav__item">
+            <a
+              className="footer-nav__item__link footer-nav__item__link--color"
+              href="#"
+            >
               Services
             </a>
           </li>
-          <li className="navigation__item">
-            <a className="navigation__link navigation__link--color" href="#">
+          <li className="footer-nav__item">
+            <a
+              className="footer-nav__item__link footer-nav__item__link--color"
+              href="#"
+            >
               Projects
             </a>
           </li>

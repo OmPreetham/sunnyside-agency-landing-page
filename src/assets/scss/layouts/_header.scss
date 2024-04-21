@@ -4,6 +4,7 @@
   position: absolute;
 
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: $gap-small;
 
@@ -12,4 +13,15 @@
   width: 100%;
 
   z-index: 1;
+
+  &__logo-wrapper {
+    margin-left: 2rem;
+    scale: 1.5;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .header {
+    padding: 2rem;
+  }
 }

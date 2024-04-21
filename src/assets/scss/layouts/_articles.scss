@@ -1,5 +1,6 @@
 @use '../utils/variables' as *;
 @use '../base/topography' as *;
+@use '../components/learn-more-button' as *;
 
 .article-wrapper {
   display: flex;
@@ -9,13 +10,14 @@
 .article {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 
   align-items: center;
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: $gap-midium-high;
+    gap: $gap-medium;
     justify-content: space-around;
 
     grid-area: content;
@@ -37,10 +39,22 @@
 
   &__picture {
     grid-area: picture;
+    width: 100%;
   }
 
   &__image {
     width: 100%;
+  }
+
+  &__button {
+    @include learn-more-button;
+
+    &--border-yellow {
+      border-bottom: 0.5rem solid $clr-primary-yellow;
+    }
+    &--border-red {
+      border-bottom: 0.5rem solid $clr-primary-soft-red;
+    }
   }
 }
 
@@ -59,9 +73,12 @@
 
     &__content {
       max-width: none;
+
       margin: 1rem;
 
       align-items: center;
+
+      text-align: center;
     }
   }
 

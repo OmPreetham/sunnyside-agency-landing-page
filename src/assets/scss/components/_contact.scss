@@ -1,0 +1,12 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+@mixin contact-link {
+  font-family: $ff-fraunces;
+  text-transform: uppercase;
+  font-weight: $fw-700;
+
+  color: $clr-neutral-very-dark-desaturated-blue;
+
+  background-color: $clr-neutral-white;
+}

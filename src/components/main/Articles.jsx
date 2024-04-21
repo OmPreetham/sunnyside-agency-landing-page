@@ -9,7 +9,9 @@ export function Articles({}) {
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <button className="article__button">Learn More</button>
+          <button className="article__button article__button--border-yellow">
+            <span className="article__button__text">Learn More</span>
+          </button>
         </div>
         <picture className="article__picture">
           <source
@@ -31,7 +33,9 @@ export function Articles({}) {
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <button className="article__button">Learn More</button>
+          <button className="article__button article__button--border-red">
+            <span className="article__button__text">Learn More</span>
+          </button>
         </div>
         <picture className="article__picture">
           <source

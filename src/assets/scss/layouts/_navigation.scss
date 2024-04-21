@@ -1,4 +1,5 @@
 @use '../utils/variables' as *;
+@use '../components/navigation-item' as *;
 
 .navigation {
   &__menu {
@@ -8,7 +9,11 @@
 
   &__list {
     display: flex;
-    gap: $gap-normal;
+    gap: $gap-midium-high;
+  }
+
+  &__item {
+    @include navigation-item;
   }
 }
 
@@ -34,8 +39,7 @@
     }
 
     &__list--mobile {
-      padding: 2em 4em;
-      padding-top: 3em;
+      padding: 4em;
 
       flex-direction: column;
       align-items: center;
@@ -43,6 +47,22 @@
       background-color: $clr-neutral-white;
 
       clip-path: polygon(90% 9%, 100% 0, 100% 100%, 0 100%, 0 9%);
+    }
+
+    &__item {
+      &__link {
+        color: $clr-neutral-dark-grayish-blue;
+
+        &--contact {
+          color: $clr-neutral-very-dark-desaturated-blue;
+          background-color: $clr-primary-button;
+
+          &:focus,
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
     }
   }
 }
