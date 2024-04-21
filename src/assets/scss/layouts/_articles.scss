@@ -3,14 +3,13 @@
 @use '../components/learn-more-button' as *;
 
 .article-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .article {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
 
   align-items: center;
 
@@ -40,10 +39,12 @@
   &__picture {
     grid-area: picture;
     width: 100%;
+    height: 100%;
   }
 
   &__image {
     width: 100%;
+    height: 100%;
   }
 
   &__button {

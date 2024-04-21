@@ -24,9 +24,21 @@ Desktop
 
 ![Desktop Preview](/public/preview-desktop.png)
 
+![Desktop Preview Active](/public/preview-desktop-active.png)
+
+![Desktop Preview Testimonials](/public/preview-desktop-testimonials.png)
+
+![Desktop Preview Footer](/public/preview-desktop-footer.png)
+
 Mobile
 
 ![Mobile Preview](/public/preview-mobile.png)
+
+![Mobile Preview Menu](/public/preview-mobile-menu.png)
+
+![Mobile Preview 1st Half](/public/preview-mobile-1st-half.png)
+
+![Mobile Preview 2nd Half](/public/preview-mobile-2nd-half.png)
 
 ## Getting Started
 
