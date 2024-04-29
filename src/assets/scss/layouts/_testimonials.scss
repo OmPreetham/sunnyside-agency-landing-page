@@ -8,17 +8,20 @@
   justify-content: center;
   gap: 5rem;
 
-  max-width: 75%;
   min-height: 95dvh;
   margin-inline: auto;
 
   padding-block: 5rem;
+
+  background-color: $clr-neutral-while-yellow;
 
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: $gap-medium;
+
+    max-width: 75%;
   }
 
   &__heading {
